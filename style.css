@@ -1,0 +1,68 @@
+* { 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.paibox {
+    background-color: black;
+    height: 950px;
+    display: flex;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 { 
+    width: 200px;
+    height: 200px;
+    border: black solid 1px ;
+}
+.box1 { 
+    background-color: red;
+    animation-name: ani1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.box2 { 
+    background-color: blue;
+    padding-bottom: 1000px;
+    animation-name: ani2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.box3 { 
+    background-color: green;
+    animation-name: ani1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.box4 { 
+    background-color: yellow;
+    padding-bottom: 1000px;
+    animation-name: ani2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.box5 { 
+    background-color: purple;
+    animation-name: ani1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani1 {
+    from { 
+        height: 0px;
+    }
+    to { 
+        height: 1000px;
+    }
+}
+@keyframes ani2 {
+    from {
+        margin-top: 960px;
+    }
+    to { 
+        margin-bottom: 900px;
+    }
+}
